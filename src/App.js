@@ -1,26 +1,10 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-
+import Producttable from './producttable';
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+        const products=[{name:"iphone XR",categorie:"smart phone",prix:"2500TND"},{name:"newbalence",categorie:"clothes",prix:"340TND"}]
+        return ( <Producttable table={products}/>)
 }
 
 export default App;
